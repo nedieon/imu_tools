@@ -22,16 +22,18 @@ Installing
 
 ### From source ###
 
-[Create a catkin workspace](http://wiki.ros.org/catkin/Tutorials/create_a_workspace)
-(e.g., `~/ros-hydro-ws/`) and source the `devel/setup.bash` file.
+Create a ROS2 Worksapce
+
+    mkdir ws
+    cd ws
+    mdir src
+    cd src
 
 Make sure you have git installed:
 
     sudo apt-get install git-core
 
-Download the stack from our repository into your catkin workspace (e.g.,
-`ros-hydro-ws/src`; use the proper branch for your distro, e.g., `groovy`,
-`hydro`...):
+Get version of imu_tools matching your distribution (i.e. dashing, eloquent, foxy...)
 
     git clone -b <distro> https://github.com/ccny-ros-pkg/imu_tools.git
 
@@ -39,10 +41,10 @@ Install any dependencies using [rosdep](http://www.ros.org/wiki/rosdep).
 
     rosdep install imu_tools
 
-Compile the stack:
+Compile the stack (assuming ws is your workspace):
 
-    cd ~/ros-hydro-ws
-    catkin_make
+    cd ~/ws
+    colcon build
 
 More info
 -----------------------------------
