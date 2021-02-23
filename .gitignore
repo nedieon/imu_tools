@@ -4,6 +4,8 @@
 cmake_install.cmake
 bin/
 build/
+install/
+log/
 lib/
 *.cfgc
 imu_filter_madgwick/cfg/cpp/
